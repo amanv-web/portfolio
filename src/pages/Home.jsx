@@ -3,7 +3,7 @@ import HeroSection from '../components/Home/HeroSection'
 
 import About from './About'
 import Contact from './Contact'
-import Projects from './Projects'
+import Projects from './projects'
 import Navbar from '../components/Home/Navbar'
 import Skills from './Skills'
 

@@ -24,15 +24,15 @@ function Contact() {
             className=" flex
          justify-around pt-7 gap-2"
           >
-            <div className="flex items-center gap-2 bg-red-300 p-2 rounded-2xl">
+            <div className="flex items-center gap-2 bg-[#3cd597] p-2 rounded-2xl">
               {" "}
               <FaLinkedin /> <button>Linked In</button>
             </div>{" "}
-            <div className="flex items-center gap-2 bg-red-300 p-2 rounded-2xl">
+            <div className="flex items-center gap-2 bg-[#3cd597] p-2 rounded-2xl">
               {" "}
               <FaLinkedin /> <button>Email</button>
             </div>{" "}
-            <div className="flex items-center gap-2 bg-red-300 p-2 rounded-2xl">
+            <div className="flex items-center gap-2 bg-[#3cd597] p-2 rounded-2xl">
               {" "}
               <FaLinkedin /> <button>Resume</button>
          
