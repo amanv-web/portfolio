@@ -12,7 +12,6 @@ function About() {
     });
   }, []);
 
-  // Manually split text into words
   const text =
     "I am Aman Vishwakarma, a passionate React Developer and tech nerd from Azamgarh, India - 276201. With experience in building modern,  responsive web applications, I specialize in JavaScript (ES6+),  React v19, Redux, Context API, Tailwind CSS, and Bootstrap. I focus on delivering seamless user experiences and optimized performance. As a dedicated Freelancer, I have successfully completed multiple projects, consistently exceeding client expectations with clean, efficient, and scalable code.My strong problem-solving skills and attention to detail allow me to tackle complex challenges, creating solutions that are both innovative and practical. I take pride in writing clean, maintainable code and continuously improving my skills to stay updated with the latest industry trends. Beyond  coding, I enjoy exploring new technologies, collaborating with fellow developers, and contributing to projects that push the boundaries of web development. I believe that great digital experiences are built on both creativity and technical excellence,and I strive to combine these elements in every project I undertake.";
   const words = text.split(" ");
