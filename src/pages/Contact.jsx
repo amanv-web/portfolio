@@ -6,11 +6,8 @@ function Contact() {
   return (
       <>
       <Navbar/>
-      
-    
+   
     <div className=" flex justify-center items-center h-screen pb-40 ">
-
-
       <div className=" w-1/2 p-10 ">
         <h1 className=" text-6xl font-extrabold text-center  ">Get in touch</h1>
         <p className="pt-4">
@@ -18,7 +15,6 @@ function Contact() {
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
         </p>
-
         <div>
           <div
             className=" flex
@@ -34,8 +30,7 @@ function Contact() {
             </div>{" "}
             <div className="flex items-center gap-2 bg-[#3cd597] p-2 rounded-2xl">
               {" "}
-              <FaLinkedin /> <button>Resume</button>
-         
+              <FaLinkedin /> <button>Resume</button>    
             </div>
           </div>
         </div>

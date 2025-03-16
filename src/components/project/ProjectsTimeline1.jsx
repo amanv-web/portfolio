@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 export default function ProjectsTimeline1() {
   return (
     <div>
-      <section className="">
-        <div className="container max-w-5xl px-4 py-12 mx-auto bg-red-500">
-          <motion.div className="grid gap-4 mx-4 sm:grid-cols-12 bg-amber-200 p-5">
+      
+        <div className=" max-w-5xl px-4 py-12 mx-auto ">
+          <motion.div className="grid gap-4 mx-4 sm:grid-cols-12  ">
             <div className="col-span-12 sm:col-span-3">
               <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-[#3cd597]">
                 <h3 className="text-3xl font-semibold">Anime Nexus</h3>
@@ -58,7 +58,7 @@ export default function ProjectsTimeline1() {
             </div>
           </motion.div>
         </div>
-      </section>
+     
     </div>
   );
 }

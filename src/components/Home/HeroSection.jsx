@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
-import ImageDot from "../features/ImageDot";
+import ImageDot from "../features/smoothScroll";
 
 function HeroSection() {
   return (
@@ -43,7 +43,7 @@ function HeroSection() {
           <motion.div
             initial={{ y: "-5vw", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ type: "spring", duration: 1, delay: 0.5 }}
+            transition={{  type: "spring", duration: 1, delay: 0.5 }}
             className="w-90 h-90 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] hover:scale-105 transition-all"
           >
             <motion.img

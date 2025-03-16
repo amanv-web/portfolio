@@ -2,14 +2,37 @@ import React from "react";
 import Navbar from "../components/Home/Navbar";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 function About() {
-  const containerRef = useRef(null);
-
   useEffect(() => {
-    document.fonts.ready.then(() => {
-      if (!containerRef.current) return;
-      containerRef.current.style.visibility = "visible";
-    });
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".myimage",
+      {
+      opacity: 0,
+      scale: 0.8,
+      x: -40,
+      },
+      {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      duration: 1,
+      ease: "power2.in",
+      scrollTrigger: {
+        trigger: ".myimage",
+        start: "top 90%",
+        end: "bottom 95%",
+        scrub: true,
+        markers: true,
+      },
+      }
+    );
+
+
+
   }, []);
 
   const text =
@@ -18,16 +41,15 @@ function About() {
 
   return (
     <>
-      <Navbar />
-      <div
-        className="h-screen flex justify-around wrap text-white"
-        ref={containerRef}
-      >
-        <div className="p-10 pl-20 w-100 h-100">
+      
+      <div className="h-screen flex justify-around wrap text-white overflow-hidden">
+        <div
+          className="  p-10 pl-20 w-100 h-110"
+        >
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nZFKBtMqEPK6jGteuXQYONRAyCtW2FCH1A&s"
+            src="https://imgur.com/ScTLwjd.png"
             alt="Profile"
-            className="w-90 h-100 "
+            className=" myimage w-90 h-110 "
           />
         </div>
         <div className="  pt-5 w-4/6  h-screen ">
@@ -39,13 +61,13 @@ function About() {
                 className="mr-2"
                 initial={{ opacity: 0, y: 10 }}
                 transition={{
-                  delay: index * 0.015,
+                  delay: index * 0.01,
                   duration: 1,
                   type: "spring",
                   bounce: 0,
                 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: false, margin: "-120px 0px -50px 0px" }}
+                viewport={{ once: true }}
               >
                 {word}
               </motion.span>

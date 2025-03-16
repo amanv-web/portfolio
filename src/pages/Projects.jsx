@@ -1,31 +1,74 @@
-import React from 'react'
-import Navbar from '../components/Home/Navbar'
+import React, { useEffect, useRef } from "react";
+import Navbar from "../components/Home/Navbar";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ProjectsTimeline from "../components/project/ProjectsTimeline1";
+import ProjectsTimeline2 from "../components/project/ProjectsTimeline2";
+import ProjectsTimeline3 from "../components/project/ProjectsTimeline3";
+import ProjectsTimeline4 from "../components/project/ProjectsTimeline4";
 
-import ProjectsTimeline from '../components/project/ProjectsTimeline1'
-import ProjectsTimeline2 from '../components/project/ProjectsTimeline2'
-import ProjectsTimeline3 from '../components/project/ProjectsTimeline3'
-import ProjectsTimeline4 from '../components/project/ProjectsTimeline4'
+function Projects() {
+  const projectRefs = useRef([]);
 
-function projects() {
+  const list = [ProjectsTimeline, ProjectsTimeline2, ProjectsTimeline3, ProjectsTimeline4];
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    projectRefs.current.forEach((el) => {
+      if (el) {
+        gsap.fromTo(
+          el,
+          {
+            opacity: 0,
+            scale: 0.8,
+          },
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 90%",
+              end: "bottom 90%",
+              scrub: true,
+              markers: true,
+            },
+          }
+        );
+      }
+    });
+  }, []);
+
   return (
     <>
-     <Navbar/>
-    <div className='      '>
-        <div>
-        <h1 className=" text-8xl font-extrabold flex justify-center">Projects</h1>
-
-        </div>
-            <div>
-            <ProjectsTimeline />
-            <ProjectsTimeline2 />
-            <ProjectsTimeline3 />
-            <ProjectsTimeline4 />
-
+      <Navbar />
+      <Navbar />
+      <div className="absolute w-48 h-48 bg-green-700 opacity-100 rounded-xl left-70 -z-10 blur-3xl " >
+      
+      </div>
+      <div>
+        <h1 className="text-8xl font-extrabold flex justify-center mt-10">
+          Projects
+        </h1>
+        <div className="space-y-15 mt-20">
+          {list.map((Component, index) => (
+            <div
+              key={index}
+              ref={(el) => (projectRefs.current[index] = el)}
+              className="
+                myDiv    
+              bg-green-700 max-w-5xl px-4 mx-auto rounded-2xl
+              "
+            >
+              <Component />
             </div>
-    </div>
+          ))}
+        </div>
+      </div>
     </>
-       
-  )
+  );
 }
 
-export default projects
+export default Projects;
