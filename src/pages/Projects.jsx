@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Home/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ProjectsTimeline from "../components/Project/ProjectsTimeline1";
-import ProjectsTimeline2 from "../components/Project/ProjectsTimeline2";
-import ProjectsTimeline3 from "../components/Project/ProjectsTimeline3";
-import ProjectsTimeline4 from "../components/Project/ProjectsTimeline4";
+import ProjectsTimeline from "../components/project/ProjectsTimeline1";
+import ProjectsTimeline2 from "../components/project/ProjectsTimeline2";
+import ProjectsTimeline3 from "../components/project/ProjectsTimeline3";
+import ProjectsTimeline4 from "../components/project/ProjectsTimeline4";
 
 function Projects() {
   const projectRefs = useRef([]);
@@ -33,7 +33,6 @@ function Projects() {
               start: "top 90%",
               end: "bottom 90%",
               scrub: true,
-            
             },
           }
         );
@@ -44,10 +43,7 @@ function Projects() {
   return (
     <>
       <Navbar />
-      <Navbar />
-      <div className="absolute w-48 h-48 bg-green-700 opacity-100 rounded-xl left-70 -z-10 blur-3xl " >
-      
-      </div>
+      <div className="absolute w-48 h-48 bg-green-700 opacity-100 rounded-xl left-70 -z-10 blur-3xl "></div>
       <div>
         <h1 className="text-8xl font-extrabold flex justify-center mt-10">
           Projects
@@ -57,10 +53,7 @@ function Projects() {
             <div
               key={index}
               ref={(el) => (projectRefs.current[index] = el)}
-              className="
-                myDiv    
-              bg-green-700 max-w-5xl px-4 mx-auto rounded-2xl
-              "
+              className="myDiv bg-green-700 max-w-5xl px-4 mx-auto rounded-2xl"
             >
               <Component />
             </div>
