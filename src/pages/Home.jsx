@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroSection from '../components/Home/HeroSection'
-
 import About from './About'
 import Contact from './Contact'
 import Projects from './projects'
@@ -20,8 +19,9 @@ function  Home() {
     className=" absolute top-15 left-14 w-35 h-35 -z-1 brightness-50" alt="" />
    <div className="relative" >
       <HeroSection/>
-        <Skills/>
+      
         <About/>
+        <Skills/>
         <Projects/>
         <Contact/>
 

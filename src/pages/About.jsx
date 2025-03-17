@@ -26,7 +26,7 @@ function About() {
         start: "top 90%",
         end: "bottom 95%",
         scrub: true,
-        markers: true,
+       
       },
       }
     );
@@ -41,7 +41,7 @@ function About() {
 
   return (
     <>
-      
+      <Navbar />  
       <div className="h-screen flex justify-around wrap text-white overflow-hidden">
         <div
           className="  p-10 pl-20 w-100 h-110"

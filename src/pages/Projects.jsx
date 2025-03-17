@@ -33,7 +33,7 @@ function Projects() {
               start: "top 90%",
               end: "bottom 90%",
               scrub: true,
-              markers: true,
+            
             },
           }
         );
