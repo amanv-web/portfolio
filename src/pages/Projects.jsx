@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Home/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ProjectsTimeline from "../components/project/ProjectsTimeline1";
-import ProjectsTimeline2 from "../components/project/ProjectsTimeline2";
-import ProjectsTimeline3 from "../components/project/ProjectsTimeline3";
-import ProjectsTimeline4 from "../components/project/ProjectsTimeline4";
+import ProjectsTimeline from "../components/Project/ProjectsTimeline1";
+import ProjectsTimeline2 from "../components/Project/ProjectsTimeline2";
+import ProjectsTimeline3 from "../components/Project/ProjectsTimeline3";
+import ProjectsTimeline4 from "../components/Project/ProjectsTimeline4";
 
 function Projects() {
   const projectRefs = useRef([]);
