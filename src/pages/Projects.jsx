@@ -43,7 +43,7 @@ function Projects() {
   return (
     <>
       <Navbar />
-      <div className="absolute w-48 h-48 bg-green-700 opacity-100 rounded-xl left-70 -z-10 blur-3xl "></div>
+
       <div>
         <h1 className="text-8xl font-extrabold flex justify-center mt-10">
           Projects

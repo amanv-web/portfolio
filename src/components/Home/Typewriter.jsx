@@ -2,7 +2,7 @@ import React from 'react'
 import Typewriter from 'typewriter-effect';
 function typewriter() {
   return (
-    <div className='text-3xl font-bold pt-2 '>
+    <div className='text-3xl font-bold pt-2 md:pl-0  pl-10 '>
       <Typewriter
     options={{
         loop: true,

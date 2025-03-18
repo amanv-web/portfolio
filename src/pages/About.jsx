@@ -11,23 +11,23 @@ function About() {
     gsap.fromTo(
       ".myimage",
       {
-      opacity: 0,
-      scale: 0.8,
-      x: -40,
+        opacity: 0,
+        scale: 0.8,
+        x: -40,
       },
       {
-      opacity: 1,
-      scale: 1,
-      x: 0,
-      duration: 1,
-      ease: "power2.in",
-      scrollTrigger: {
-        trigger: ".myimage",
-        start: "top 90%",
-        end: "bottom 95%",
-        scrub: true,
-       
-      },
+        opacity: 1,
+        scale: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.in",
+        scrollTrigger: {
+          trigger: ".myimage",
+          start: "top 90%",
+          end: "bottom 95%",
+          scrub: true,
+
+        },
       }
     );
 
@@ -41,20 +41,20 @@ function About() {
 
   return (
     <>
-      <Navbar />  
-      <div className="h-screen flex justify-around wrap text-white overflow-hidden">
+      <Navbar />
+      <div className="h-screen flex justify-around wrap text-white overflow-hidden flex-wrap ">
         <div
           className="  p-10 pl-20 w-100 h-110"
         >
           <img
             src="https://imgur.com/ScTLwjd.png"
             alt="Profile"
-            className=" myimage w-90 h-110 "
+            className=" myimage w-90 h-110"
           />
         </div>
-        <div className="  pt-5 w-4/6  h-screen ">
-          <h1 className=" text-8xl font-extrabold">About me</h1>
-          <p className="text-1xl font-bold text-gray-400 pt-5 w-5/6 flex   flex-wrap ">
+        <div className="  md:pt-5 md:w-4/6  md:pl-0 pl-5">
+          <h1 className="md:text-8xl text-6xl font-extrabold">About me</h1>
+          <p className=" font-  justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
             {words.map((word, index) => (
               <motion.span
                 key={index}

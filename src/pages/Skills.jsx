@@ -40,7 +40,7 @@ useEffect(() => {
     {
       opacity: 1,
       scale: 1,
-      x: 250,
+      x: 0,
       duration: 3,
       delay: 1,
       scrollTrigger: {

@@ -1,33 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
-import ImageDot from "../features/smoothScroll";
+
 
 function HeroSection() {
   return (
     <>
-      <ImageDot className=" " />
-      <div className="flex items-center justify-around gap-40  h-screen pb-10">
+      <div className="md:flex items-center justify-around gap-40   h-screen pb-10">
         <motion.div
           initial={{ y: "5vw", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 2, delay: 0.5 }}
-          className="w-2/6"
+          className="md:w-2/6"
         >
-          <h1 className="text-3xl font-bold text-[#3cd597]">
+          <h1 className="md:text-3xl text-xl md:p-0 pt-20 pl-10 font-bold text-[#3cd597]">
             Hey there!, I'm-
           </h1>
-          <h1 className="text-8xl font-extrabold">Aman </h1>
-
-          <h1 className="text-8xl font-extrabold text-gray-600">Vishwakarma</h1>
-          <Typewriter />
-
           <div>
-            <p className="text-md flex pt-5 f">
+            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold">Aman </h1>
+            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold text-gray-600">Vishwakarma</h1>
+            <Typewriter />
+          </div>
+          <div>
+            <p className="text-md md:pl-0  pl-10 flex pt-5 f">
               currently focused on building user experiences that drive growth.
             </p>
           </div>
-          <div className="flex space-x-4 pt-5 ">
+          <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
             <button className=" hover:bg-[#3cd597] text-white font-bold py-2 px-4 rounded-full h-full  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
               Hire Me
             </button>
@@ -39,19 +38,25 @@ function HeroSection() {
           </div>
         </motion.div>
 
-        <div>
-          <motion.div
-            initial={{ y: "-5vw", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{  type: "spring", duration: 1, delay: 0.5 }}
-            className="w-90 h-90 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] hover:scale-105 transition-all"
-          >
-            <motion.img
-              src="https://imgur.com/zjs5lRE.png"
-              alt="Profile"
-              className="w-90 h-105 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] hover:scale-105 transition-all"
-            />
-          </motion.div>
+        <div className="md:pl-0   md:pt-0 pt-10 sm:max-w-full flex justify-center items-center">
+                   
+                   <motion.div
+  initial={{ y: "-5vw", opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ type: "spring", duration: 1, delay: 0.5 }}
+  className="flex justify-center sm:justify-center items-center md:w-90 md:h-90 h-60 w-60 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] transition-all"
+>
+  <motion.img
+    whileHover={{ scale: 1.05 }}
+    transition={{ type: "spring", stiffness: 300 }}
+    className="md:w-90 md:h-90 h-70 w-60 overflow-hidden rounded-full 
+               shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] 
+               transition-all"
+    src="https://imgur.com/zjs5lRE.png"
+    alt="Profile"
+  />
+</motion.div>
+
         </div>
       </div>
     </>
