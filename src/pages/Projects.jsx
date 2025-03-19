@@ -23,8 +23,7 @@ function Projects() {
             opacity: 0,
             scale: 0.8,
           },
-          {
-            opacity: 1,
+          { opacity: 1,
             scale: 1,
             duration: 1,
             ease: "power2.out",
@@ -39,21 +38,19 @@ function Projects() {
       }
     });
   }, []);
-
   return (
     <>
-      <Navbar />
-
+      <Navbar/>
       <div>
-        <h1 className="text-8xl font-extrabold flex justify-center mt-10">
+        <h1 className="md:text-8xl text-6xl font-extrabold flex justify-center mt-10">
           Projects
         </h1>
-        <div className="space-y-15 mt-20">
+        <div className="space-y-15 mt-20  flex justify-center items-center flex-col">
           {list.map((Component, index) => (
             <div
               key={index}
               ref={(el) => (projectRefs.current[index] = el)}
-              className="myDiv bg-green-700 max-w-5xl px-4 mx-auto rounded-2xl"
+              className="myDiv bg-green-700 md:max-w-5xl md:px-4 md:mx-auto w-10/12   font-thin rounded-2xl"
             >
               <Component />
             </div>

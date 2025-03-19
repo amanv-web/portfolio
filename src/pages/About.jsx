@@ -42,18 +42,18 @@ function About() {
   return (
     <>
       <Navbar />
-      <div className="h-screen flex justify-around wrap text-white overflow-hidden flex-wrap ">
+      <div className="md:h-screen flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
         <div
-          className="  p-10 pl-20 w-100 h-110"
+          className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center "
         >
           <img
             src="https://imgur.com/ScTLwjd.png"
             alt="Profile"
-            className=" myimage w-90 h-110"
+            className=" myimage w-90 h-120 "
           />
         </div>
         <div className="  md:pt-5 md:w-4/6  md:pl-0 pl-5">
-          <h1 className="md:text-8xl text-6xl font-extrabold">About me</h1>
+          <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
           <p className=" font-  justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
             {words.map((word, index) => (
               <motion.span
