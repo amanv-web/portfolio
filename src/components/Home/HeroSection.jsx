@@ -13,25 +13,25 @@ function HeroSection() {
           transition={{ type: "spring", duration: 2, delay: 0.5 }}
           className="md:w-2/6"
         >
-          <h1 className="md:text-3xl text-xl md:p-0 pt-20 pl-10 font-bold text-[#3cd597]">
+          <h1 className="md:text-3xl text-xl md:p-0 pt-20 pl-10 font-bold text-[#00FFFF]">
             Hey there!, I'm-
           </h1>
           <div>
             <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold">Aman </h1>
-            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold text-gray-600">Vishwakarma</h1>
+            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold text-[#00ffff6e]">Vishwakarma</h1>
             <Typewriter />
           </div>
           <div>
             <p className="text-md md:pl-0  pl-10 flex pt-5 f">
-              currently focused on building user experiences that drive growth.
+              Currently focused on building user experiences that drive growth.
             </p>
           </div>
           <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
-            <button className=" hover:bg-[#3cd597] text-white font-bold py-2 px-4 rounded-full h-full  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 ">
+            <a  href="mailto:getintouch.amanv@hotmail.com" className=" hover:bg-[#7fffffc7] text-black  py-2 px-4 rounded-full h-full  bg-[#00FFFF]   bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border  ">
               Hire Me
-            </button>
+            </a>
             <a rel="stylesheet" href="#" download>
-              <button className=" hover:bg-[#3cd597] text-white font-bold py-2 px-4 rounded-full h-full  bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
+              <button className=" hover:bg-[#7fffffc7] text-black  py-2 px-4 rounded-full h-full   bg-[#00FFFF]    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border ">
                 View Resume
               </button>
             </a>

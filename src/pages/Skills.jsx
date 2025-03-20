@@ -107,7 +107,7 @@ function Skills() {
           <h1 className='font-extrabold flex justify-center md:mt-10 my-6 md:text-8xl text-6xl'>Skills</h1>
         </div>
         <div>
-          <h1 className="movh1 text-2xl  md:pl-40   pl-10">
+          <h1 className="movh1 text-2xl  md:pl-40 text-[#00FFFF]  pl-10">
             FrontendTech
           </h1>
           <div className="movimg1 flex flex-wrap justify-center gap-6 p-6">
@@ -119,7 +119,7 @@ function Skills() {
             ))}
           </div>
           <div>
-            <h1 className="movh1 text-2xl  md:pl-40   pl-10">
+            <h1 className="movh1 text-2xl  md:pl-40 text-[#00FFFF]   pl-10">
               DevTools & Animation
             </h1>
             <div className="movimg2 flex flex-wrap justify-center gap-6 p-6">
@@ -133,7 +133,7 @@ function Skills() {
           </div></div>
         <div>
           <h1 className="movh1 text-2xl   md:pl-40   pl-10 text-gray-500 ">
-            BackendTech & <span className='text-white'>Database</span>
+            BackendTech & <span className='text-[#00FFFF] '>Database</span>
           </h1>
           <div className="movimg3 flex flex-wrap justify-center gap-6 p-6">
             {backendTech.map((tech, index) => (

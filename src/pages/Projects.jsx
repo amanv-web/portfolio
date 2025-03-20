@@ -50,7 +50,7 @@ function Projects() {
             <div
               key={index}
               ref={(el) => (projectRefs.current[index] = el)}
-              className="myDiv bg-green-700 md:max-w-5xl md:px-4 md:mx-auto w-10/12   font-thin rounded-2xl"
+              className="myDiv bg-[#1E1E1E] md:max-w-5xl md:px-4 md:mx-auto w-10/12   font-thin rounded-2xl"
             >
               <Component />
             </div>

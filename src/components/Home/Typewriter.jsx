@@ -6,11 +6,12 @@ function typewriter() {
       <Typewriter
     options={{
         loop: true,
+   
     }}
 
   onInit={(typewriter) => {
     typewriter
-      .typeString("I'm a ")
+      .typeString("A ")
       .pauseFor(500)
       .typeString("Web Developer")
       .pauseFor(2000)
