@@ -10,7 +10,7 @@ import ProjectsTimeline4 from "../components/project/ProjectsTimeline4";
 function Projects() {
   const projectRefs = useRef([]);
 
-  const list = [ProjectsTimeline, ProjectsTimeline2, ProjectsTimeline3, ProjectsTimeline4];
+  const list = [ProjectsTimeline, ProjectsTimeline3, ProjectsTimeline4, ProjectsTimeline2];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -56,6 +56,9 @@ function Projects() {
             </div>
           ))}
         </div>
+        <h1 className="md:text-3xl text-2xl font-extrabold flex justify-center mt-10">
+          More on Github.....
+        </h1>
       </div>
     </>
   );

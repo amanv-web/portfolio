@@ -8,13 +8,14 @@ export default function ProjectsTimeline1() {
         <motion.div className="grid gap-4 mx-4 sm:grid-cols-12 py-3 ">
         <div className="col-span-12 sm:col-span-3">
   <div className="text-center sm:text-left mb-1 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[#00FFFF]">
-    <h3 className="text-3xl font-semibold text-left text-[#00FFFF]">Anime Nexus</h3>
+  
+  <a href="https://anime-stickers.vercel.app/"><h3 className="text-3xl font-semibold text-left text-[#00FFFF]">Anime Nexus</h3>
 
-    <img
-      className="w-full md:h-full h-56 rounded-lg"
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2nZFKBtMqEPK6jGteuXQYONRAyCtW2FCH1A&s"
-      alt=""
-    />
+<img
+  className="w-full md:h-40   h-56 rounded-lg"
+  src="https://imgur.com/KCx0gVi.png"
+  alt=""
+/></a>  
   </div>
 </div>
 <div className="relative col-span-12 md:px-4 space-y-6 sm:col-span-9">
