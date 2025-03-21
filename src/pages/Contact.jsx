@@ -28,7 +28,7 @@ function Contact() {
 
               <a href='http://www.linkedin.com/in/aman-vishwakarma-81a094356' className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black" >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-1 ">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5 ">
                   <FaLinkedin />   Linked In
                 </span>
               </a>
@@ -38,14 +38,14 @@ function Contact() {
               <a href="mailto:getintouch.amanv@hotmail.com" className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)] " />
 
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-1xl text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-1">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-1xl text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5">
                   <MdEmail />  Email
                 </span>
               </a>
 
               <a href="https://github.com/amanv-web" className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium  text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-1">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium  text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5">
                   <FaGithubSquare />  Github
                 </span>
               </a>
