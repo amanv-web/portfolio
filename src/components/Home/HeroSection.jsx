@@ -31,6 +31,7 @@ function HeroSection() {
               Hire Me
             </a>
             <a rel="stylesheet" href="https://drive.google.com/file/d/1IT9hdTzZoitMdERo00eBZ0ivMR3fpUJN/view?usp=sharing" >
+
               <button className=" hover:bg-[#7fffffc7] text-black  py-2 px-4 rounded-full h-full   bg-[#00FFFF]    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border ">
                 View Resume
               </button>
