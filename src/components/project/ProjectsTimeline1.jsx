@@ -25,10 +25,10 @@ export default function ProjectsTimeline1() {
       <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
         Key Features
       </h3>
-      <li>Anime Discovery – Browse and explore a vast collection of anime series and movies.</li>
-      <li>Advanced Search & Filters – Easily find anime by genre, popularity, or release year.</li>
-      <li>Responsive UI – Fully optimized for desktops, tablets, and mobile devices.</li>
-      <li>Dark Mode Support – Enjoy a sleek and immersive viewing experience</li>
+      <li>Anime Discovery</li>
+      <li>Advanced Search & Filters </li>
+      <li>Responsive UI </li>
+      <li>Dark Mode Support </li>
     </div>
 
     <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-[#00FFFF]">

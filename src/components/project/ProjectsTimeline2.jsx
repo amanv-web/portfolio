@@ -24,11 +24,11 @@ function ProjectsTimeline4() {
                 <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
                   Key Features
                 </h3>
-                <li>Instant Password Generation – Get secure passwords with a single click.</li>
-                <li>Customizable Options – Choose password length, uppercase/lowercase, numbers, and special characters.</li>
-                <li>Copy to Clipboard – Easily copy the generated password with one click.</li>
-                <li>User-Friendly UI – Clean and minimalistic interface for ease of use.</li>
-                <li>Responsive Design – Works seamlessly on all devices.</li>
+                <li>Instant Password Generation </li>
+                <li>Customizable Options </li>
+                <li>Copy to Clipboard </li>
+                <li>User-Friendly UI </li>
+                <li>Responsive Design </li>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#00FFFF]">
                 <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">

@@ -25,9 +25,9 @@ function ProjectsTimeline4() {
       <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
         Key Features
       </h3>
-      <li>Instant QR Code Generation – Create QR codes in real-time.</li>
-      <li>Multi-Format Support – Generate QR codes for URLs, text, and more.</li>
-      <li>Responsive Design – Works seamlessly on all devices.</li>
+      <li>Instant QR Code Generation </li>
+      <li>Multi-Format Support </li>
+      <li>Responsive Design </li>
     </div>
     <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#00FFFF]">
       <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">

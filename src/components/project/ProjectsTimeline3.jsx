@@ -25,11 +25,11 @@ function ProjectsTimeline3() {
                 <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
                   Key Features
                 </h3>
-                <li>Live Exchange Rates – Get real-time currency conversion rates.</li>
-                <li>Multi-Currency Support – Convert between major global currencies.</li>
-                <li>User-Friendly UI – Simple and easy-to-use interface for quick calculations.</li>
-                <li>Responsive Design – Works seamlessly on desktops, tablets, and mobile devices.</li>
-                <li>Instant Calculations – Get conversion results instantly as you type.</li>
+                <li>Live Exchange Rates </li>
+                <li>Multi-Currency Support </li>
+                <li>User-Friendly UI </li>
+                <li>Responsive Design </li>
+                <li>Instant Calculations </li>
               </div>
               <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#00FFFF]">
                 <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
