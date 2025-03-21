@@ -11,9 +11,9 @@ function HeroSection() {
           initial={{ y: "5vw", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 2, delay: 0.5 }}
-          className="md:w-2/6"
+          className="md:w-2/6 w-11/12"
         >
-          <h1 className="md:text-3xl text-xl md:p-0 pt-20 pl-10 font-bold text-[#00FFFF]">
+          <h1 className="md:text-3xl   text-xl md:p-0 pt-20 pl-10 font-bold text-[#00FFFF]">
             Hey there!, I'm-
           </h1>
           <div>
